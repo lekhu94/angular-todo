@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #ededed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    font-size: 16px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px -10px #000;
+    h3 {
+        margin: 0;
+        margin-bottom: 15px;
+        small {
+            display: block;
+            font-weight: normal;
+            font-size: 13px;
+            margin-top: 4px;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            border: 1px solid #1fafdb;
+            padding: 12px;
+            border-radius: 4px;
+            color: #0fa6d3;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            text-transform: capitalize;
+            transition: all ease-in-out 0.2s;
+            font-size: 14px;
+            &.complete{
+                border: 1px solid #198754;
+                background:rgb(25 135 84 / 11%);
+                color: #198754;
+            }
+            &:hover {
+                box-shadow: 0px 5px 5px -5px hsl(0deg 0% 0% / 54%);
+            }
+            input {
+                margin-right: 10px;
+            }
+            h4, p {
+                margin: 0;
+            }
+        }
+    }
+}

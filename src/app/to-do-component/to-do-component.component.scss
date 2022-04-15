@@ -1,0 +1,24 @@
+form {
+    max-width: 380px;    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+    }
+    .control{
+        padding: 8px 12px;
+        border: 1px solid #c5c5c5;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    textarea{
+        resize: none;
+    }
+}

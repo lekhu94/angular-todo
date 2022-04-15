@@ -1,0 +1,13 @@
+<section class="card">
+    <h3>Done List</h3>
+    <ul>
+        <li class="complete" *ngFor="let todo of doneList">
+            <input type="checkbox" [checked]="todo.isDone" (change)="markPending(todo)">
+            <div>
+                <h4>{{todo.name}}</h4>
+                <p>{{todo.description}}</p>
+            </div>
+        </li>
+    </ul>
+    <p *ngIf="doneList.length==0">No results found</p>
+</section>

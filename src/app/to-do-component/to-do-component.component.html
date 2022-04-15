@@ -1,0 +1,19 @@
+<form [formGroup]="form" class="card">
+    <h3>Enter Task Details <small>All fields are required</small></h3>
+    <div>
+        <label>Task name</label>
+        <input formControlName="name" type="text" placeholder="Name" class="control">
+    </div>
+    <div>
+        <label>Task Description </label>
+        <textarea formControlName="description" class="control" placeholder="Description"></textarea>
+    </div>
+    <div>
+        <label>Repeating Task</label>
+        <select formControlName="repeating" class="control">
+            <option value="">-- Select --</option>
+            <option value="y">Y</option>
+            <option value="n">N</option>
+        </select>
+    </div>
+</form>
